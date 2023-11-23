@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stylish Button</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
 
-    <!-- Link CSS  -->
-    <link rel="stylesheet" href="./styles.css">
+    .modern-button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s, transform 0.2s;
+      color: #fff;
+      background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
 
-  </head>
-  <body>
-    <div class="container">
-      <div class="btn">Hire Me</div>
-    </div>
-  </body>
+    .modern-button:hover {
+      background-image: linear-gradient(to right, #39e672 0%, #38f9d7 100%);
+      color: #fff;
+    }
+
+    .modern-button:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+  <a href="#" class="modern-button">Click me</a>
+</body>
 </html>
