@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+
+    <style>
+      @font-face {
+        font-family: rubik;
+        src: url(../Rubik/Rubik-VariableFont_wght.ttf);
+      }
+
+      .container {
+        border-radius: 10px;
+        margin: 50px;
+        height: 350px;
+        width: 350px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+        font-family: rubik;
+        padding: 20px 10px 0 20px;
+        background-color: #b2ffeb;
+       
+      }
+
+      img {
+        height: 200px;
+        width: 340px;
+        border-radius: 10px;
+      }
+
+      p {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+
+      hr {
+        width: 75%;
+        border: 1px solid rgba(128, 128, 128, 0.27);
+        float: left;      
+      }
+
+      #div
+      {
+        margin-top: 8px;
+      }
+      
+      #price{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        color:rgb(102, 116, 204);
+        padding-right: 8px;
+    }
+    
+    #realPrice{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        color: rgb(119, 124, 133);
+        padding-right: 8px;
+      }
+
+    #offer{
+        background-color: #1DD1A1;
+        color: #fff;
+        padding:4px;
+        border-radius: 3px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    #btn{
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+      font-family: rubik;
+      margin-top: 7px;
+      padding:3px 6px;
+      margin-right: 7px;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 2px;
+      background:aquamarine;
+      box-shadow: 0px 9px 35px rgba(0,0,0,0);
+      display: inline-block;
+      transition:  background-color 0.3s ease;
+    }
+    #btn:hover{
+      background-color: #11da64;
+    }
+    #cart{
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+      font-family: rubik;
+      margin-top: 7px;
+      padding:3px 6px;
+      margin-right: 5px;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 2px;
+      background:aquamarine;
+      box-shadow: 0px 9px 35px rgba(0,0,0,0);
+      display: inline-block;
+      transition:  background-color 0.3s ease;
+    }
+    #cart:hover{
+      background-color: #8dda11;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="image_container">      
+      <img src="web-development-1.png"
+      alt="Course Image"
+    /></div>
+      <p>Web Development Master Course</p>
+      <hr /><br>
+      <div id="div">
+        <span id="price">₹5500</span>
+        <span id="realPrice"><del>₹10999</del></span>
+        <span id="offer">50% off</span>
+        <div>
+          <button id="btn">Buy</button>
+          <button id="cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
